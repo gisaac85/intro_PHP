@@ -6,5 +6,22 @@
 </head>
 
 <body>
+<?php
+$x=array("a."=>"C#","d."=>"VB","c."=>"JS","e."=>"Zend","b."=>"A");
+ksort($x); //sort according the keys of array
+?>
+<pre>
+<?php
+print_r ($x);
+?>
+</pre>
+<?php
+asort($x); //sort according the vlaues of array
+?>
+<pre>
+<?php
+print_r ($x);
+?>
+</pre>
 </body>
 </html>
