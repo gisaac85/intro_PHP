@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<form method="post" action="if_statment.php">
+<form method="post" action="if_else.php">
 <div>
 <span>Name:</span>
 <input type="text" name="name" />
@@ -26,20 +26,28 @@
 </div>
 </form>
 <?php
+
+
 if($_POST==true){
 $name=$_POST["name"];
 $age=$_POST["age"];
 $email=$_POST["email"];
 $mobile=$_POST["mobile"];
 
-echo "Name: ".$name."<br>";
-echo "Age: ".$age."<br>";
-echo "Email: ".$mobile."<br>";
-echo "Mobile: ".$mobile."<br>";
+	if($name==""){echo "You must enter name!"."<br>";}
+	if($age==""){echo "You must enter age!"."<br>";}
+	if($email==""){echo "You must enter email!"."<br>";}
+	if($mobile==""){echo "You must enter mobile!"."<br>";}
+	
+	else
+	{
+		echo "Name: ".$name."<br>";
+		echo "Age: ".$age."<br>";
+		echo "Email: ".$mobile."<br>";
+		echo "Mobile: ".$mobile."<br>";
+	}
 }
-else{
-alert("You must enter values!");
-}
+
 ?>
 </body>
 </html>
