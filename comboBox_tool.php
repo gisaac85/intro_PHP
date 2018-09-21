@@ -2,10 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css"/>
 <title>Earth</title>
 </head>
 
-<body>
+<body class="img-style">
 <form method="post" action="comboBox_tool.php">
 
 <select name="location" >
@@ -20,6 +21,7 @@
 </select>
 <input type="submit" value="Go" />
 </form>
+<img src="images/pic.png" style="position:absolute" />
 <?php
 
 if($_POST==true){
@@ -31,70 +33,84 @@ switch ($loc){
 // Antaractica
 case 'Antarctica': 
 { ?>
+<img src="images/img/antarctica.png" 
+width="76" height="68" 
+  style=" padding:200px 200px 10px 300px;position:relative" />
 <audio controls autoplay><source src="\ogg\antarctica.ogg" type="audio/ogg">  
 </audio> 
 <?php
-echo $loc;
 break;
 }
 
 // Africa
 case 'Africa': 
 { ?>
+<img src="images/img/africa.png" 
+width="76" height="68" 
+style=" padding:120px 0 0 250px;position:relative" />
 <audio controls autoplay><source src="\ogg\africa.ogg" type="audio/ogg">  
 </audio> 
 <?php
-echo $loc;
 break;
 }
 
 // South America
 case 'South America': 
 { ?>
+<img src="images/img/south_america.png" 
+width="76" height="68" 
+style=" padding:180px 200px 100px 100px;position:relative" />
 <audio controls autoplay><source src="\ogg\south_america.ogg" type="audio/ogg">  
 </audio> 
 <?php
-echo $loc;
 break;
 }
 
 // North America
 case 'North America': 
 { ?>
+<img src="images/img/north_america.png" 
+width="76" height="68" 
+style=" padding:20px 300px 200px 20px;position:relative" />
 <audio controls autoplay><source src="\ogg\north_america.ogg" type="audio/ogg">  
 </audio> 
 <?php
-echo $loc;
 break;
 }
 
 // Australia
 case 'Australia': 
 { ?>
+<img src="images/img/australia.png" 
+width="76" height="68" 
+style=" padding:200px 50px 50px 450px;position:relative" />
 <audio controls autoplay><source src="\ogg\australia.ogg" type="audio/ogg">  
 </audio> 
 <?php
-echo $loc;
 break;
 }
 
 // Asia
 case 'Asia': 
 { ?>
+<img src="images/img/asia.png" 
+width="76" height="68" 
+style=" padding:10px 10px 400px 400px;position:relative" />
 <audio controls autoplay><source src="\ogg\asia.ogg" type="audio/ogg">  
 </audio> 
 <?php
-echo $loc;
 break;
 }
 
 // Europe
 case 'Europe': 
 { ?>
+<img src="images/img/europe.png" 
+width="76" height="68" 
+style=" padding:5px 200px 700px 275px;position:relative" />
 <audio controls autoplay><source src="\ogg\europe.ogg" type="audio/ogg">  
 </audio> 
 <?php
-echo $loc;
 break;
 }
 default:{
